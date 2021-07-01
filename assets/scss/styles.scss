@@ -1,0 +1,9 @@
+@import "body.scss";
+
+$color: red;
+
+body {
+  background: linear-gradient(blue, orange);
+  position: sticky;
+  gap: 10px;
+}
