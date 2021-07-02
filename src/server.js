@@ -23,4 +23,4 @@ const server = app.listen(PORT, handelListening);
 
 const io = socketIO(server);
 
-io.on("connection", (socket) => socketController(socket));
+io.on("connection", (socket) => socketController(socket, io));

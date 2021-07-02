@@ -11,6 +11,11 @@ const events = {
   strokedPath: "strokedPath",
   fill: "fill",
   filled: "filled",
+  playerUpdate: "playerUpdate",
+  gameStrated: "gameStrated",
+  leaderNotifi: "leaderNotifi",
+  gameEnded: "gameEnded",
+  gameStarting: "gameStarting",
 };
 
 export default events;
