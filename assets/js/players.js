@@ -9,6 +9,7 @@ import {
 
 const board = document.getElementById("jsPBoard");
 const notifis = document.getElementById("jsNotifis");
+const timer = document.getElementById("jsTimer");
 
 const addPlayers = (players) => {
   board.innerHTML = "";
@@ -24,7 +25,7 @@ const setNotifi = (text = null) => (notifis.innerText = text);
 export const handlePlayerUpdate = ({ sockets }) => addPlayers(sockets);
 
 export const handleGameStarted = () => {
-  setNotifi();
+  setNotifi("Find Answer!");
   disableCanvas();
   hideControls();
   enableChat();
@@ -45,3 +46,6 @@ export const handleGameEnded = () => {
 };
 
 export const handleGameStarting = () => setNotifi("Game sill start soon.");
+
+export const handleTimeCount = ({ time }) =>
+  (timer.innerText = `${time >= 10 ? time : `0${time}`}s`);

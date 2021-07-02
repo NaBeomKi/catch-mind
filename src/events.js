@@ -16,6 +16,7 @@ const events = {
   leaderNotifi: "leaderNotifi",
   gameEnded: "gameEnded",
   gameStarting: "gameStarting",
+  timeCount: "timeCount",
 };
 
 export default events;
